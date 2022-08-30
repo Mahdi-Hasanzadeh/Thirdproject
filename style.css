@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: white;
+  background: linear-gradient(to right, #480032, tomato);
+  padding: 0.5em 0;
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 800;
+  text-shadow: 1px 1px 5px #480032;
+}
+.login {
+  cursor: pointer;
+  margin-left: 20px;
+}
+.signup {
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.header-container {
+  background-color: #ffc107;
+  color: #5995da;
+  display: flex;
+  justify-content: center;
+  font-weight: 800;
+}
+.header {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
+}
+.subscribe{
+  font-size: 1.5em;
+}
+.header-logo {
+  width: 100%;
+}
+logo {
+  width: 50%;
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    justify-content: space-around;
+    flex-flow: row;
+  }
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.photo-grid-items {
+  border: 1px solid #ffffff;
+  width: 310px;
+  height: 310px;
+}
+.img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.footer-item {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-one,
+.footer-three {
+  width: 25%;
+  flex: 1;
+  background: #aac1db;
+  min-width: 140px;
+}
+.footer-two {
+  flex-grow: 2;
+  min-width: 140px;
+}
+
+.social-footer img {
+  width: 100%;
+}
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 20px;
+}
+.footer-menu li {
+  margin: 0 10px;
+}
+@media screen and (max-width: 750px) {
+  .footer-menu {
+    align-items: normal;
+  }
+  .footer-one {
+    background-color: white;
+  }
+}
+@media screen and (max-width: 640px) {
+  .footer {
+    flex-flow: column;
+  }
+}
